@@ -1,0 +1,26 @@
+test/
+oth/
+
+# Logs
+*.log
+
+# Images
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Pytorch models
+*.pt
+
+# Pickled data
+*.pickle
+
+# Locally cached python
+*.pyc
+__pycache__/
+
+# Text data
+*.json
+
+.DS_Store
