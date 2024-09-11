@@ -33,9 +33,9 @@ If you’re running the script on sets of png images (which is what I do if I wa
 
 
 
-### Run code from DEWPAT manuscript Example 3 ###
+### Run code from DEWPAT manuscript Example 3 
 
-# images of flower petals modelled for the honeybee visual system are found in folder flower_ex_bee_flowers.zip (unzip before use). use the following code to calculate global patch covariance on the multipsectral tiff stack images and save the results in flower_bee_complexity.csv
+images of flower petals modelled for the honeybee visual system are found in folder flower_ex_bee_flowers.zip (unzip before use). use the following code to calculate global patch covariance on the multipsectral tiff stack images and save the results in flower_bee_complexity.csv
 
 python img_complexity.py flower_ex_bee_flowers --mspec --global_patch_covar >flower_bee_complexity.csv
 
