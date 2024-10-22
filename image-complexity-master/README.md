@@ -3,12 +3,10 @@
 DEWPAT assumes the input type is sRGB by default; to activate the multispectral mode, pass 
 --mspec
 
-
 # Img-Complexity
 
 This repo contains implementations of several simple measures of image complexity,
-including ones based on frequency content, information entropy, spatial derivatives, and differences in local statistical moments for *multispectral images*
-
+including ones based on frequency content, information entropy, spatial derivatives, and differences in local statistical moments.
 Some basic visualization methods are also present.
 
 ## Requirements
@@ -23,27 +21,9 @@ Activate environment: `source activate imcom` or `conda activate imcom`.
 
 ## Usage
 
-Simply run `python img_complexity.py <input>` '--mspec', where `<input>` can be a folder of images or a single image. 
+Simply run `python img_complexity.py <input>`, where `<input>` can be a folder of images or a single image. 
 
 Run `python img_complexity.py --help` to print detailed usage help from the script.
-
-If you’re running the script on tiff stacks, run as normal, calling the name of the stack or folder they are in.
-
-If you’re running the script on sets of png images (which is what I do if I want to be able to run a Procrustes superimposition on my dewlap images to get them all to the same consensus shape) then you also need to include a csv file in the format shown below telling python which images correspond to which sets (in the format ids, stacknum, filename; with ids being individual numbers for each image starting at 0, stacknum being the number of the stack starting at 0, and the file name being the entire file name including file type). For example, if your image stacks are in sets of 3s, then the id column would have 0, 1, 2, the stack num column would have 0, 0, 0 for the first image stack and then 3, 4, 5 and 1, 1, 1, for the next image stack. Make sure the images and csv file are loose in the main folder, not nested in their own folder, and then call use python img_complexity.py CSVFILE.csv --mspec
-
-
-
-### Run code from DEWPAT manuscript Example 3 
-
-images of flower petals modelled for the honeybee visual system are found in folder flower_ex_bee_flowers.zip (unzip before use). use the following code to calculate global patch covariance on the multipsectral tiff stack images and save the results in flower_bee_complexity.csv
-
-python img_complexity.py flower_ex_bee_flowers --mspec --global_patch_covar >flower_bee_complexity.csv
-
-
-
-
-
-
 
 #### Intermediate Visualizations
 
