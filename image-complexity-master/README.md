@@ -1,7 +1,13 @@
-# Currently only img_complexity.py can handle mspec images (seg.py and vis.py functionality are not yet optimized for mspec images)
+# Note on image file type:
 
-DEWPAT assumes the input type is sRGB by default; to activate the multispectral mode, pass 
+Currently only img_complexity.py can handle mspec images (seg.py and vis.py functionality are not yet optimized for mspec images)
+
+For img_complexity.py DEWPAT assumes the input type is sRGB by default; to activate the multispectral mode, pass 
 --mspec
+
+# Note on scripts in this branch:
+
+Use img_complexity.py and vis.py from this (master) branch. Use seg.py from dev branch.
 
 # Img-Complexity
 

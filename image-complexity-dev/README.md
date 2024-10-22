@@ -1,3 +1,9 @@
+# Note on scripts in this branch:
+
+Use seg.py from this (dev) branch. Use img_complexity.py and vis.py from master branch. 
+
+These scripts only work with sRGB images.
+
 # Img-Complexity
 
 This repo contains implementations of several simple measures of image complexity,
