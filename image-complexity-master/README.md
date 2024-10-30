@@ -7,7 +7,7 @@ For img_complexity.py DEWPAT assumes the input type is sRGB by default; to activ
 
 # Note on scripts in this branch:
 
-Use img_complexity.py and vis.py from this (master) branch. Use seg.py from dev branch.
+Use img_complexity.py & vis.py from this (master) branch. Use seg.py and preprocess.py from dev branch.
 
 # Img-Complexity
 
