@@ -9,6 +9,40 @@ For img_complexity.py DEWPAT assumes the input type is sRGB by default; to activ
 
 Use img_complexity.py & vis.py from this (master) branch. Use seg.py and preprocess.py from dev branch.
 
+## Run code from DEWPAT manuscript  
+
+### DEWPAT Section 3.1. Worked Examples
+
+### Example 1
+sRGB images of beetle elytra are in folder beetle_elytra. use the following code to calculate 4 measures of complexity on the images and save the results in beetle_complexity.csv
+
+python img_complexity.py beetle_elytra --grad_mag --diff_shannon_entropy_patches --global_patch_covar --pwg_bhattacharyya_div >beetle_complexity.csv
+
+### Example 2
+See dev branch README for Example 2 code
+
+### Example 3
+sRGB images of flower petals are in folder flower_ex_vis_flowers and mspec images of flower petals are in folder flower_ex_bee_flower. use the following code to calculate global patch covariance on the images and save the results.
+
+python img_complexity.py flower_ex_vis_flowers --global_patch_covar >flower_vis_complexity.csv
+
+python img_complexity.py --mspec flower_ex_bee_flowers --global_patch_covar >flower_bee_complexity.csv
+
+### DEWPAT figures
+We've also included the images and code needed to create the plots in some of the figures to illustrate further functionality
+
+### figure 2
+sRGB images of anole dewlap cross sections are in folder fig2. use the following code to view visual output from DEWPAT representing different dimensions of pattern complexity 
+
+python img_complexity.py fig2 --show_all
+
+
+### figure 3
+sRGB images of anole dewlap cross sections are in folder fig3. use the following code to view various visual output plots from DEWPAT 
+python vis.py fig3 --all
+
+
+
 # Img-Complexity
 
 This repo contains implementations of several simple measures of image complexity,
