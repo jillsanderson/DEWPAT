@@ -6,7 +6,7 @@ This folder contains 3 folders:
 
 image-complexity-master
 - master git repo for DEWPAT python scripts
-- use this repo for main img_complexity script, which includes functionality to input both sRGB and multispectral images
+- use this repo for main img_complexity script, which includes functionality to compute and visualize complexity across both sRGB and multispectral images
 - use this repo for vis.py scripts, which includes visualization options for sRGB images (including 1D colour histogram)
 
 image-complexity-dev
