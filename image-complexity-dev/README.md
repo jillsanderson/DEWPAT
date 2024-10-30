@@ -99,6 +99,15 @@ There are a few preprocessing options:
 
 - **Blurring**: passing `--blur 5`, for instance, will low-pass filter the image with a Gaussian of standard deviation 5. Note that resizing happens *before* blurring, so choose the standard deviation with this in mind.
 
+- **Visual Acuity**: We provide a simple method of accounting for visual acuity blurring effects, based on [AcuityView](https://github.com/eleanorcaves/AcuityView), induced by the real sizes and distances of the objects and visual systems involved. Call `python preprocess.py --help` for usage help.
+
+Run: python preprocess.py <input_image or folder name> <csv> <output_folder_name> --verbose 
+
+Can be run on a single image or folder of images. Must also input a .csv file with headings Image,	Width, Distance, MRA (minimum resolvable angle) and cells populated with image name (including file extension; e.g., aequatorialis_B24-0.png), numerical width (e.g., 42.847), numerical distance (e.g., 1000), numerical MRA (e.g., 0.08). Note that width and distance must be in the same units. In the example above, the units is mm (1000mm corresponds to 1m viewing distance). 
+
+
+
+
 #### Examples
 
 - Compute all the complexity measures for a single input image, as well as visualizing the contributions of each pixel for the local pixelwise entropy measure:
@@ -300,14 +309,6 @@ python seg.py <target> --kmeans_k_file_list k.csv --verbose \
               --write_mean_segs --mean_seg_output_dir segs_dir \
               --seg_stats_output_file cluster_data.csv
 ```
-
-## Visual Acuity
-
-We provide a simple method of accounting for visual acuity blurring effects, based on [AcuityView](https://github.com/eleanorcaves/AcuityView), induced by the real sizes and distances of the objects and visual systems involved. Call `python preprocess.py --help` for usage help.
-
-Run: python preprocess.py <input_image or folder name> <csv> <output_folder_name> --verbose 
-
-Can be run on a single image or folder of images. Must also input a .csv file with headings Image,	Width, Distance, MRA (minimum resolvable angle) and cells populated with image name (including file extension; e.g., aequatorialis_B24-0.png), numerical width (e.g., 42.847), numerical distance (e.g., 1000), numerical MRA (e.g., 0.08). Note that width and distance must be in the same units. In the example above, the units is mm (1000mm corresponds to 1m viewing distance). 
 
 
 ## Acknowledgements

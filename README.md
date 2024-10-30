@@ -12,7 +12,7 @@ image-complexity-master
 image-complexity-dev
 - git repo for DEWPAT python scripts in development (have yet to be merged with master).
 - use this repo for seg.py scripts, which includes functionality to segment sRGB images with mean, median, mode clustering and export better visualizations
-- use this repo for preprocess.py scripts, which includes functionality to blur images to model visual acuity and viewing distance using AcuityView (Caves & Johnsen, 2017).
+- use this repo for preprocess.py scripts, which includes functionality to blur both sRGB and multispectral images to model visual acuity and viewing distance using AcuityView (Caves & Johnsen, 2017).
 
 
 
