@@ -38,8 +38,13 @@ python img_complexity.py fig2 --show_all
 
 
 ### figure 3
-sRGB images of anole dewlap cross sections are in folder fig3. use the following code to view various visual output plots from DEWPAT 
-python vis.py fig3 --all
+sRGB images of anole dewlap cross sections are loose in folder and in folder fig3. use the following code to view various visual output plots from DEWPAT 
+python vis.py porcatus.png --all
+python vis.py gemmosus.png --all
+
+To output .csv file with pixel frequencies in each colour bin run:
+python vis.py fig3 --write_1d_histo_vals --output_file fig3.csv
+
 
 
 
